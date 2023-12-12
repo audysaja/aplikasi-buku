@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/splash"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/regis_usrnm"
+        android:inputType="text"
+        android:layout_marginTop="280dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/input_text"
+        android:layout_marginEnd="25dp"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/regis_email"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/input_text"
+        android:layout_marginEnd="25dp"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/regis_pw"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/input_text"
+        android:layout_marginEnd="25dp"
+        android:hint="Password"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:longClickable="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="15dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+        <CheckBox
+            android:id="@+id/isAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minHeight="48dp"
+            android:text="Register As Admin"
+            android:buttonTint="@color/brown"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/isUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            android:text="Register as User"
+            android:buttonTint="@color/brown"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/isAdmin"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/regis_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/button_login"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/ke_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="@string/after_register"
+        android:textAllCaps="false"
+        android:textColor="#92A7AB"
+        android:textSize="12sp"
+        app:cornerRadius="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/brown"
+        android:layout_marginTop="50dp"
+        android:text="© Inventory.buku Apps by kelompok 8"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+
+</LinearLayout>

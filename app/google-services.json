@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "932264171971",
+    "firebase_url": "https://inventory-buku-default-rtdb.firebaseio.com",
+    "project_id": "inventory-buku",
+    "storage_bucket": "inventory-buku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932264171971:android:a5eaad215f6ae7d2b10576",
+        "android_client_info": {
+          "package_name": "com.example.inventorybuku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB_TtHPQ3W4bMx9qfsrykmgIQemXvuKyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
